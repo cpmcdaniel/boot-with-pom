@@ -2,13 +2,13 @@
 
 A simple `with-pom` task that allows boot builds to get their project information
 (groupId, artifactId, version), dependencies, and repositories from an existing
-Maven
+Maven POM.
 
 This artifact is not yet deployed to any public JAR repositories. To use it, you
 must build and install it from source. Once installed, you can use it in your own
 boot scripts with the following dependency declaration:
 
-](dependency)
+[](dependency)
 ```clojure
 [cpmcdaniel/boot-with-pom "0.0.1-SNAPSHOT"]
 ```
@@ -50,6 +50,16 @@ The build can then be executed with `boot build` or:
 
 ```bash
 boot with-pom aot javac uber jar install
+```
+
+### Specifying location of the POM
+
+In most cases, the pom.xml will exist in the project root directory. If, for some
+reason, it is in a different location or has a different name, you may pass the
+`-p` or `--pom` argument like so:
+
+```bash
+boot with-pom --pom foo/bar-pom.xml jar install
 ```
 
 ## Acknowledgements

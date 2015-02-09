@@ -1,5 +1,7 @@
 # boot-with-pom
 
+[![Clojars Project](http://clojars.org/cpmcdaniel/boot-with-pom/latest-version.svg)](http://clojars.org/cpmcdaniel/boot-with-pom)
+
 A simple `with-pom` task that allows boot builds to get their project information
 (groupId, artifactId, version), dependencies, and repositories from an existing
 Maven POM.

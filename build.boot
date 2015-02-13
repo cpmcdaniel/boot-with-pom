@@ -11,7 +11,7 @@
  '[adzerk.boot-test :refer :all]
  '[cpmcdaniel.boot-with-pom :refer :all])
 
-(def +version+ "0.0.1-SNAPSHOT")
+(def +version+ "0.0.1")
 
 (bootlaces! +version+)
 

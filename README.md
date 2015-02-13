@@ -12,7 +12,7 @@ boot scripts with the following dependency declaration:
 
 [](dependency)
 ```clojure
-[cpmcdaniel/boot-with-pom "0.0.1-SNAPSHOT"] ;; latest release
+[cpmcdaniel/boot-with-pom "0.0.1"] ;; latest release
 ```
 [](/dependency)
 

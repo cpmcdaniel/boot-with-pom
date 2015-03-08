@@ -12,7 +12,7 @@ boot scripts with the following dependency declaration:
 
 [](dependency)
 ```clojure
-[cpmcdaniel/boot-with-pom "0.0.1"] ;; latest release
+[cpmcdaniel/boot-with-pom "1.0"] ;; latest release
 ```
 [](/dependency)
 
@@ -34,7 +34,7 @@ may look like the following:
 (set-env!
  :source-paths   #{"src/main/java" "src/main/clojure"}
  :resource-paths #{"src/main/resources"}
- :dependencies   '[[cpmcdaniel/boot-with-pom "0.0.1-SNAPSHOT" :scope "provided"]])
+ :dependencies   '[[cpmcdaniel/boot-with-pom "1.0" :scope "provided"]])
 
 (task-options!
  aot  {:namespace     #{'net.canarymod.plugin.lang.clojure.clj-plugin}}

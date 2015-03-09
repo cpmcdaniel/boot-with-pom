@@ -6,13 +6,9 @@ A simple `with-pom` task that allows boot builds to get their project informatio
 (groupId, artifactId, version), dependencies, and repositories from an existing
 Maven POM.
 
-This artifact is not yet deployed to any public JAR repositories. To use it, you
-must build and install it from source. Once installed, you can use it in your own
-boot scripts with the following dependency declaration:
-
 [](dependency)
 ```clojure
-[cpmcdaniel/boot-with-pom "1.0"] ;; latest release
+[cpmcdaniel/boot-with-pom "1.1-SNAPSHOT"] ;; latest release
 ```
 [](/dependency)
 
@@ -34,7 +30,7 @@ may look like the following:
 (set-env!
  :source-paths   #{"src/main/java" "src/main/clojure"}
  :resource-paths #{"src/main/resources"}
- :dependencies   '[[cpmcdaniel/boot-with-pom "1.0" :scope "provided"]])
+ :dependencies   '[[cpmcdaniel/boot-with-pom "1.1-SNAPSHOT" :scope "provided"]])
 
 (task-options!
  aot  {:namespace     #{'net.canarymod.plugin.lang.clojure.clj-plugin}}

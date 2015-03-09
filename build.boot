@@ -1,7 +1,7 @@
 (set-env!
  :source-paths #{"src"}
  :dependencies '[[org.clojure/clojure "1.6.0" :scope "provided"]
-                 [boot/core "2.0.0-rc8" :scope "provided"]
+                 [boot/core "2.0.0-rc11" :scope "provided"]
                  [adzerk/bootlaces "0.1.9" :scope "test"]
                  [adzerk/boot-test "1.0.3" :scope "test"]
                  [org.apache.maven/maven-model "3.2.5" :scope "provided"]])
@@ -11,7 +11,7 @@
  '[adzerk.boot-test :refer :all]
  '[cpmcdaniel.boot-with-pom :refer :all])
 
-(def +version+ "1.0")
+(def +version+ "1.1-SNAPSHOT")
 
 (bootlaces! +version+)
 

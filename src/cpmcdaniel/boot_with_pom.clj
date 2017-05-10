@@ -20,7 +20,7 @@
         (pod/with-eval-in worker
           (require '[cpmcdaniel.boot-with-pom.impl :as impl])
           (impl/extract-from-pom ~original-pom))
-        tmp         (temp-dir!)]
+        tmp         (tmp-dir!)]
 
     (set-env! :dependencies #(apply conj % deps)
               :repositories #(apply conj % repos))
